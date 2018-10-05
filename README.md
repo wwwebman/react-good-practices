@@ -1,6 +1,4 @@
 # React Good Practices Guide
-This guide for those React ninjas who want to improve their coding culture. If you are here the hope is not died ... :pray:
-
 ## TL;DR
 As a developers we do a lot of wrong things before we find "The Golden Fleece" of hight quality, good architecture, great performance. We try to figure out what is the best engineering solution for our aplication. When we start working on project most of us have [YAGNI][yagni] syndrome, someone [premature optimization][premature] problems, some devs may not be aware of [DRY-KISS-LESS][dry-kiss-less] and so on. If I am talking about you it's time to make you happy by answering on most of questions.
 
@@ -8,19 +6,19 @@ So, besides of general good practice principles mentioned above let's go more fu
 
 ### General
 #### Broken YAGNI principle === feature is not released :imp:
-Have you ever considered why you as developer too slow? Might not applied **YAGNI** principle? 
+Have you ever considered why your development is slow? There are a lot of reasons, but one of the most popular is not applied **YAGNI** principle. 
 
-**Example**: Let's imagine that you are working on some big React Component that includes a lot of logic, must cooperate with store, render tons of small components. You already done with some code. So, let's say you have  [Smart React.Component][smart] that is connected to store and a lot of functional components. It's works pretty nice, but it's not at all satisfactory for you, because in meantime you have read article aka '[functional component vs React.Component vs React.PureComponent?][fc-vs-cp]'. Guess what the next step do most of us take? Exactly, refactoring and optimization!
+**Example**: Let's imagine that you are working on some big React Component that includes a lot of logic, must cooperate with store, render tons of small components. You already done with some code. So, let's say you have  [Smart React.Component][smart] that is connected to store and a lot of functional components. It's works pretty nice, but it's not at all satisfactory for you, because in meantime you have read article aka '[functional component vs React.Component vs React.PureComponent?][fc-vs-cp]'. Guess what the next step most of us take? Exactly, refactoring and optimization!
 
 Here is the place where [premature optimization][premature] is came!
 "...We should forget about small efficiencies, say about 97% of the time: premature optimization is the root of all evil. Yet we should not pass up our opportunities in that critical 3%.". 
 
-For sure, as developers we have to learn deeply Reacts API, be aware bad practices... But if our implementation is fit code style requirements, business requirement and haven't any critical perfomance issues - just deliver feature.
+For sure, we have to learn deeply Reacts API, be aware of bad practices... But if our implementation is fit code style requirements, business requirement and haven't any critical perfomance issues - just deliver feature.
 
 #### What :pill: we are recommend?
 | #Teory  | #RealWorld  |
 | ------------- | ------------- |
-| Understand business requrements | ... |
+| | Understand business requrements |
 | Split feature story | Smaller tickets |
 | Research | Would be nice to do fast research before you start coding(maybe somebody already have solution you need) |
 | [TDD][tdd] | If requirements are **clear** - start with test |
