@@ -5,15 +5,14 @@ As a developers we do a lot of wrong things before we find "The Golden Fleece" o
 So, besides of general good practice principles mentioned above let's go more futher with real world examples:  
 
 ### General
-#### Broken YAGNI principle === feature is not released :imp:
-Have you ever considered why your development is slow? There are a lot of reasons, but one of the most popular is not applied **YAGNI** principle. 
+#### Premature optimization is the root of all evil :imp:
+Let's imagine that you are working on some big React Component that includes a lot of logic, must cooperate with store, render tons of small components. You already done with some code. So, let's say you have [Smart React.Component][smart] that is connected to store and a lot of functional components. It's works pretty nice, but it's not at all satisfactory for you, because in meantime you have read article aka '[functional component vs React.Component vs React.PureComponent?][fc-vs-cp]' or 'inline arrow function is bad for perfomance'. Guess what the next step most of us do? Exactly, refactoring and optimization! And where is a guarantee that your refactoring will improve application performance?
 
-**Example**: Let's imagine that you are working on some big React Component that includes a lot of logic, must cooperate with store, render tons of small components. You already done with some code. So, let's say you have  [Smart React.Component][smart] that is connected to store and a lot of functional components. It's works pretty nice, but it's not at all satisfactory for you, because in meantime you have read article aka '[functional component vs React.Component vs React.PureComponent?][fc-vs-cp]'. Guess what the next step most of us take? Exactly, refactoring and optimization!
+Here is the place where [premature optimization][premature] is came:
+> ...We should forget about small efficiencies, say about 97% of the time: premature optimization is the root of all evil. Yet we should not pass up our opportunities in that critical 3%.
 
-Here is the place where [premature optimization][premature] is came!
-"...We should forget about small efficiencies, say about 97% of the time: premature optimization is the root of all evil. Yet we should not pass up our opportunities in that critical 3%.". 
-
-For sure, we have to learn deeply Reacts API, be aware of bad practices... But if our implementation is fit code style requirements, business requirement and haven't any critical perfomance issues - just deliver feature.
+> Remember, you don’t sit back and imagine “I bet that code is slow”. You write your code naturally, then you measure it. If there are performance problems, fix them. We don’t need to prove an inline arrow function is fast, somebody else needs to prove it’s slow. Otherwise it’s a premature optimization.
+> [Ryan Florence](https://cdb.reacttraining.com/react-inline-functions-and-performance-bdff784f5578) 
 
 #### What :pill: we are recommend?
 | #Teory  | #RealWorld  |
